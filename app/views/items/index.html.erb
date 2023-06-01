@@ -1,0 +1,14 @@
+<div class="items-grid">
+      <% @items.each do  |item| %>
+        <div class="card">
+          <%= link_to item_path(item) do %>
+            <div class="item-card">
+              <p class="item-name"><%= item.name %></p>
+            </div>
+          <% end %>
+          <p><strong class="card-strong"><%= item.category %> </strong></p>
+          <p><strong class="card-strong">Model: </strong><%= item.model %></p>
+          <p class="boat-price"><strong class="card-strong">Price: </strong><%= item.price_daily %>€/day</p>
+        </div>
+      <% end %>
+    </div>

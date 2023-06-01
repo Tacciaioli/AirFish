@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :items do
     resources :reservations, only: [:new, :create, :destroy]
     resources :reviews, only: [:new, :create]
-    get :reviews, on: :menber
+    # get :reviews, on: :menber
   end
   resources :reservations, only: [:index]
 

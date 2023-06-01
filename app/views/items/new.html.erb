@@ -1,5 +1,11 @@
 <div>
   <%= simple_form_for [@item] do |f| %>
   <%= f.input :name %>
-  <%= f.input  %>
+  <%= f.input :category %>
+  <%= f.input :model %>
+  <%= f.input :price_daily %>
+  <%= f.input :description %>
+  <%= f.submit %>
+  <% end %>
+  <%= link_to 'Go Back', items_path %>
 </div>
