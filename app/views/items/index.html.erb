@@ -1,3 +1,11 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://external-preview.redd.it/lS15HBEbnBjBnAHpKJ2-CrMylW1sNSA0KJ7gDcg5ADk.jpg?auto=webp&s=1754f6602a1bf91485fdedb2b7c5c5708b38e10b);">
+  <div class="container">
+    <h1>Fish anywhere!</h1>
+    <p>Change your life, learn to fish.</p>
+  </div>
+</div>
+
+
 <div class="items-grid">
       <% @items.each do  |item| %>
         <div class="card">
@@ -8,7 +16,9 @@
           <% end %>
           <p><strong class="card-strong"><%= item.category %> </strong></p>
           <p><strong class="card-strong">Model: </strong><%= item.model %></p>
-          <p class="boat-price"><strong class="card-strong">Price: </strong><%= item.price_daily %>€/day</p>
+          <p class="item-price"><strong class="card-strong">Price: </strong><%= item.price_daily %>€/day</p>
         </div>
       <% end %>
     </div>
+  </div>
+</div>
